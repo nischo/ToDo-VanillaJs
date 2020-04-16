@@ -87,3 +87,36 @@ form button:hover {
 .complete-btn {
   background: rgb(45, 189, 45);
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+select {
+  color: #ff1654;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1.1rem;
+  background-color: white;
+}
+
+.select::after {
+  content: "\25bc";
+  background: #ff1654;
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  padding: 1rem;
+  pointer-events: none;
+}
